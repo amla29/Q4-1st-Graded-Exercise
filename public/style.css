@@ -1,6 +1,7 @@
 html {
   height: 100%;
   width: 100%;
+  background-color: #A4ACD2;
   background-image: url("/images/bg.png");
   background-size: cover;
   background-position: center;
@@ -25,7 +26,7 @@ h2 {
 }
 
 #invitation{
-  min-height: 65vh;
+  height: 65vh;
   width: 100%;
   background-image: url("/images/bg_input.png");
   background-size: contain;
@@ -40,8 +41,12 @@ h2 {
   padding-top: 3%;
 }
 
+#forms{
+  padding-left: 17%;
+}
+
 .input-container {
-  padding-left: 42%;
+  padding-left: 35%;
   display: flex;
   align-items: center;
 }
@@ -52,7 +57,7 @@ h2 {
   color: #576CC6;
   min-width: 10ch;
   max-width: 25ch;
-  margin-right: -5px;
+  margin-right: -4px;
   text-align: right;
 } 
 
@@ -61,30 +66,26 @@ h2 {
   padding-left: 25%;
 }
 
-#input {
-  display:flex;
-}
-
 #header {
-  background-color: #FFCC00; /* Bright Jollibee Yellow */
+  background-color: #DFE5FA;
   border-radius: 20px;
   height: 130px;
   margin-top: 10px;
   text-align: center;
-  color: #D41C1C; /* Jollibee Red */
+  color: #576CC6;
+  font-family: 'Indie Flower', cursive;
   font-size: 24px;
   font-weight: bold;
   padding: 20px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 th,
 td {
-  border: solid #D41C1C; /* Red Borders */
+  border: solid #576CC6;
   border-width: 2px;
   padding: 12px;
-  background-color: #FFEB99; /* Soft Yellow */
-  color: #D41C1C;
+  background-color: #DFE5FA;
+  color: #576CC6;
   font-weight: bold;
 }
 
@@ -92,43 +93,32 @@ td {
   border-radius: 10px;
   margin-bottom: 5px;
   height: 40px;
-  border: 2px solid #FFC107; /* Golden Yellow */
-  background-color: #FFF3CD; /* Soft Cream */
+  border: 2px solid #576CC6;
+  background-color: #DFE5FA;
   text-align: center;
   font-weight: bold;
-  color: #D41C1C;
-}
-
-.inputCSS:hover {
-  background-color: #FFD700; /* Bright Yellow */
-}
-
-.inputCSS:focus {
-  background-color: #FFC107;
-  outline: none;
+  color: #576CC6;
 }
 
 #output {
   padding: 20px;
   overflow: auto;
-  background-color: #FFF3CD; /* Light Yellow */
-  color: #D41C1C;
+  background-color: #DFE5FA;
+  color: #576CC6;
   border-radius: 15px;
   font-weight: bold;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 img {
   object-fit: contain;
   width: 100%;
-  height: auto;
+  height:rgb(154, 140, 140);
   border-radius: 15px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
 button {
-  background-color: #D41C1C; /* Jollibee Red */
-  color: #FFF3CD; /* Light Yellow */
+  background-color: #576CC6;
+  color: rgb(255, 255, 255);
   border: none;
   padding: 12px 20px;
   font-size: 18px;
@@ -139,6 +129,6 @@ button {
 }
 
 button:hover {
-  background-color: #FFC107; /* Golden Yellow */
-  color: #D41C1C;
+  background-color: #DFE5FA;
+  color: #576CC6;
 }
