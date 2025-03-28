@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width", initial-scale=1>
-  <meta name="author" content="">
+  <meta name="author" content="Louka Acorda">
   <meta name="description" content=" ">
   <meta name="keywords" content="">
   <title>Canseco - CS 3 </title>
@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <!-- local css property definitions to further enhance the page -->
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Indie+Flower&family=Dancing+Script&family=Shadows+Into+Light&family=Patrick+Hand&family=Caveat&family=Satisfy&display=swap" rel="stylesheet">
+
 
   <link rel="icon" type="image/x-icon" href="">
 </head>
@@ -24,18 +26,35 @@
   -->
   <div class="w3-bar w3-black">
     <a href="/" class="w3-bar-item w3-button w3-mobile">Home</a>
-    <a href="#" class="w3-bar-item w3-button w3-mobile">Happy</a> 
+    <a href="/happy" class="w3-bar-item w3-button w3-mobile">Happy</a> 
   </div>
 
 
   <header class="w3-container" id="header" > 
-    <h1>Roy Canseco - III-K - Jan 2025</h1>
-    <h2> Birthday </h2>
+    <h1>Louka Acorda - IX Sr - March 2025</h1>
+    <h2> Happy Birthday </h2>
   </header>
 
   <section class="w3-container" id="input"> 
+    
     <h2>Output</h2>
-    <!-- Place your output here -->
+    <div class="w3-card w3-padding w3-margin">
+      {{#each formData}}
+        <p><strong>{{@key}}:</strong> {{this}}</p>
+      {{/each}}
+    </div>
+    
+    <h2>Happy Birthday Song</h2>
+    <div class="w3-card w3-padding w3-margin">
+      <p><strong>Nickname:</strong> {{name}}</p>
+      <p><strong>Gender:</strong> {{gender}}</p>
+      <p><strong>Number of Close Friends/Family:</strong> {{number}}</p>
+      
+        {{#each song}}
+          <p><strong>{{singer}}:</strong> {{word}}</p>
+        {{/each}}
+    </div>
+
   </section>
 
   <footer class="w3-container ">

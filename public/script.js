@@ -14,19 +14,22 @@ function solve(){
     let gender = formData.get('gender');
 
   
-    /* Use the songs below needed in this exercise:
-    
-    the Good Fellow replacing blanks with either he's or she's
-    
-    For ______ a jolly good fellow. For _______ a jolly good fellow. For ________ a jolly good fellow, which nobody can deny!
+     // Determine the pronoun
+    let pronoun = gender === "male" ? "he's" : gender === "female" ? "she's" : "they're";
 
-    The Happy Birthday, replacing the blank with the name of the celebrant
+    // Happy Birthday Song
+    const happyBirthdaySong = [
+      "Happy", "birthday", "to", "you.",
+      "Happy", "birthday", "to", "you.",
+      "Happy", "birthday", "dear", name + ".",
+      "Happy", "birthday", "to", "you!"
+     ];
 
-  Happy birthday to you. Happy birthday to you. Happy birthday dear ________. Happy birthday to you!`.split(' ');
- 
-    */
+    // Jolly Good Fellow Song
+       const goodFellowSong = `For ${pronoun} a jolly good fellow. For ${pronoun} a jolly good fellow. For ${pronoun} a jolly good fellow, which nobody can deny!`;
 
-
+    console.log("Happy Birthday Song:", happyBirthdaySong);
+    console.log("Jolly Good Fellow Song:", goodFellowSong);
   
 }
 

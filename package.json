@@ -1,10 +1,11 @@
 {
   "name": "nodejs",
   "version": "1.0.0",
-  "description": "",
+  "description": "Q3 - rujia (p12554)\r ========================",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
   },
   "keywords": [],
   "author": "",
@@ -12,7 +13,17 @@
   "dependencies": {
     "@types/node": "^18.0.6",
     "body-parser": "^1.20.2",
-    "express": "^4.19.2",
-    "hbs": "^4.2.0"
-  }
+    "connect-livereload": "^0.6.1",
+    "express": "^4.21.2",
+    "hbs": "^4.2.0",
+    "livereload": "^0.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amla29/Q4-1st-Graded-Exercise.git"
+  },
+  "bugs": {
+    "url": "https://github.com/amla29/Q4-1st-Graded-Exercise/issues"
+  },
+  "homepage": "https://github.com/amla29/Q4-1st-Graded-Exercise#readme"
 }
